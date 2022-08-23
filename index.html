@@ -245,6 +245,41 @@
             </div>
         </div>
     </div>
+
+    <section id="my-keyboards">  
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Keyboards</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name"> Keychrone K2 Black</h4>
+                <img src="img/keyboard/K2.jpg" alt="Keychron K2" class="keyboard-img">
+                <a href="#"class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name"> Keychrone K2 White</h4>
+                <img src="img/keyboard/K2W.jpg" alt="Keychron K2 White" class="keyboard-img">
+                <a href="#"class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name"> Red Dragon</h4>
+                <img src="img/keyboard/Red Dragon.png" alt="Keychron K2" class="keyboard-img">
+                <a href="#"class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#20c997" fill-opacity="1" d="M0,64L48,85.3C96,107,192,149,288,165.3C384,181,480,171,576,154.7C672,139,768,117,864,117.3C960,117,1056,139,1152,133.3C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
    </section>
    <!-- Akhir Contact--> 
@@ -310,5 +345,15 @@
           .catch(error => console.error('Error!', error.message))
       })
     </script>
+
+<script type="text/javascript" src="vanilla-tilt.min.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+		max: 40,
+		speed: 400,
+    scale: 1.1,
+    glare: true,
+	});
+	</script>
   </body>
 </html>
