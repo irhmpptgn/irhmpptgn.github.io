@@ -1,3 +1,5 @@
+code .
+
 git add .
 git commit -m 'perubahan'
 git push 
